@@ -1,0 +1,109 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import LoginImage from '@/components/LoginImage.astro';
+---
+<Layout title="Discord">
+<div class="relative w-screen min-h-screen ">
+
+<LoginImage/>
+
+<div class="absolute flex t-0 l-0 min-h-[36.25rem] items-center justify-center w-full h-full">
+<form class="bg-[#313338] w-[49rem] p-8 text-lg shadow-loginshadow rounded-md box-border">
+    <div class="w-full text-center">
+        <div class="flex gap-[4.5rem]">
+
+            <div class="flex flex-col grow items-start">
+
+                <!-- HEADER -->
+
+                <div class="flex flex-col items-center w-full">
+                    <h1 class="text-2xl font-semibold mb-2 text-[#F2F3F5]">
+                    We welcome you back!
+                    </h1>
+                    <h2 class="text-[#B5BAC1] text-base font-normal">
+                    We are glad to see you again!
+                    </h2>
+                </div>
+
+                <!-- INPUT GROUP -->
+
+                <div class="w-full text-left mt-5">
+                    <div class="mb-5 text-left ">
+
+                        <label class="block uppercase text-[#B5BAC1] mb-2 text-xs font-bold tracking-wide">
+                            E-mail or phone number
+                        <span class="text-red-600 pl-1">*</span>
+                        </label>
+
+                        <div class="flex items-center text-base box-border w-full rounded-[3px] bg-[#1E1F22] border-none ">
+                            <div class="grow flex flex-col ">
+                                <input type="text" name="email" class="p-2.5 h-10 text-base text-white w-full box-border rounded-[3px] bg-transparent">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="text-left ">
+
+                        <label class="block uppercase text-[#B5BAC1] mb-2 text-xs font-bold tracking-wide">
+                            Password
+                        <span class="text-red-600 pl-1">*</span>
+                        </label>
+
+                        <div class="flex items-center text-base box-border w-full rounded-[3px] bg-[#1E1F22] border-none ">
+                            <div class="grow flex flex-col ">
+                                <input type="password" name="password" class="p-2.5 h-10 text-base text-white w-full box-border rounded-[3px] bg-transparent">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="text-[#00A8FC] block mb-5 mt-1 w-auto py-0.5 px-1 bg-none border-none text-sm font-medium select-none">
+                        <p>Forgot your password?</p>
+                    </button>
+
+                    <button type="submit" class="flex bg-[#5865F2] text-white text-base mb-2 w-full font-semibold justify-center items-center rounded-[3px] py-0.5 px-4 select-none h-11 hover:bg-[#4752C4] duration-150 ease-in">
+                        <p>Log in</p>
+                    </button>
+                    
+                    <div class="mt-1">
+                        <span class="text-[#949BA4] text-sm">do you need an account?</span>
+                        <button class="text-[#00A8FC] ml-1 p-0 bg-none text-sm">
+                            <p>sign up</p>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative  flex items-center w-[15rem] h-[21.5rem]">
+                <div class="h-full w-full text-center">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <div class="flex w-[11rem] h-[11rem] relative mb-8">
+                            <div class="p-2 rounded-lg h-[10rem] w-[10rem] bg-white">
+                                
+                            </div>
+                            <div class="w-full h-full absolute flex items-center justify-center">
+                                <img src="/images/dlogin.png" class="flex h-12 w-12">
+                            </div>
+                        </div>
+                        
+                        <h2 class="text-2xl font-semibold text-[#F2F3F5] mb-2">
+                            Log in with the QR code
+                        </h2>
+
+                        <div class="text-[#B5BAC1] font-normal text-base">
+                            Scan the code with the 
+                            <strong>Discord mobile app</strong> to sign in immediately. 
+                            to log in immediately.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+</Layout>

@@ -1,0 +1,159 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities."/>
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	*,
+	*::after,
+	*::before {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: "Ggsans", sans-serif;
+	}
+
+      @font-face {
+        font-family: "Ggsans";
+        src: url("/fonts/ggsans/ggsansRegular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+	  @font-face {
+        font-family: "Ggsans";
+        src: url("/fonts/ggsans/ggsansMedium.woff") format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+	  @font-face {
+        font-family: "Ggsans";
+        src: url("/fonts/ggsans/ggsansSemiBold.woff") format("woff");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Ggsans";
+        src: url("/fonts/ggsans/ggsansBold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+
+      /* Ginto font NORD*/
+      
+	  @font-face {
+        font-family: "GintoNord";
+        src: url("/fonts/gintonord/Ginto-Nord-500.woff2") format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+	  @font-face {
+        font-family: "GintoNord";
+        src: url("/fonts/gintonord/Ginto-Nord-600.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GintoNord";
+        src: url("/fonts/gintonord/Ginto-Nord-700.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /*¿ Ginto font NORMAL*/
+
+      @font-face {
+        font-family: "GintoNormal";
+        src: url("/fonts/gintonormal/Ginto-300.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GintoNormal";
+        src: url("/fonts/gintonormal/Ginto-400.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GintoNormal";
+        src: url("/fonts/gintonormal/Ginto-500.woff") format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GintoNormal";
+        src: url("/fonts/gintonormal/Ginto-600.woff") format("woff");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+      
+      @font-face {
+        font-family: "GintoNormal";
+        src: url("/fonts/gintonormal/Ginto-700.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+
+</style>
+
+<script>
+	// Scroll controller
+function handleScroll() {
+  const scrollPosition = window.scrollY;
+  const elementsToAnimate = document.querySelectorAll('.element-to-animate');
+
+// Add the animation class if they are in the viewport
+  elementsToAnimate.forEach((element) => {
+    const elementPosition = element.getBoundingClientRect();
+
+    if (elementPosition.top < window.innerHeight) {
+      element.classList.add('animate-fade-in-up');
+    }
+  });
+}
+
+// Add Listener for scroll event
+window.addEventListener('scroll', handleScroll);
+</script>
+
+
