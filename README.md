@@ -1,4 +1,5 @@
 # Discord Clone
+![Discord-logo-768x432](https://github.com/Ashrahx/Discord-clone/assets/114347097/2b074bd8-2d2b-4de6-a6bd-06d7561220fb)
 
 ## 🕹 Commands
 
